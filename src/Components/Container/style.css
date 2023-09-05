@@ -1,0 +1,10 @@
+.container {
+  max-width: 95.625rem;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  padding: 0 0.9375em;
+  overflow: hidden;
+  padding: 0 1.25rem;
+}

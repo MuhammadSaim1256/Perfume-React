@@ -1,0 +1,175 @@
+#choose {
+  position: relative;
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+  padding: 6.25rem 0;
+}
+
+.leaf-one {
+  position: absolute;
+  top: 0%;
+  left: 0;
+}
+
+.leaf-two {
+  position: absolute;
+  right: 0%;
+  bottom: 0%;
+}
+
+#choose h1 {
+  font-size: 2.5rem;
+  font-family: "Noto Serif";
+  text-align: center;
+  margin-bottom: 3.125rem;
+}
+
+.choose {
+  width: 100%;
+  position: relative;
+}
+
+.choose-png {
+  position: relative;
+  max-width: 36rem;
+  width: 100%;
+  height: auto;
+  margin: 0% auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.choose-png img {
+  width: 100%;
+  height: 100%;
+}
+
+.choose-text {
+  position: absolute;
+  text-align: right;
+  top: 9rem;
+  z-index: 999999;
+  left: 0.37rem;
+}
+
+.choose-text::before {
+  content: "";
+  position: absolute;
+  width: 1.87rem;
+  height: 1.87rem;
+  background: #000;
+  border-radius: 50%;
+  border: none;
+  margin-left: 1.43rem;
+}
+
+.choose-text h3 {
+  font-size: 1.5rem;
+  font-family: "Noto Serif";
+  margin-bottom: 1.25rem;
+}
+
+.choose-text p {
+  max-width: 27.68rem;
+  font-size: 1.25rem;
+  color: #5c4b38;
+  line-height: 1.75rem;
+}
+
+.choose-text-two {
+  position: absolute;
+  text-align: right;
+  bottom: 0;
+  z-index: 999999;
+  left: 0.37rem;
+}
+
+.choose-text-two::before {
+  content: "";
+  position: absolute;
+  width: 1.87rem;
+  height: 1.87rem;
+  background: #000;
+  border-radius: 50%;
+  border: none;
+  margin-left: 1.43rem;
+}
+
+.choose-text-two h3 {
+  font-size: 1.5rem;
+  font-family: "Noto Serif";
+  margin-bottom: 1.25rem;
+}
+
+.choose-text-two p {
+  max-width: 27.68rem;
+  font-size: 1.25rem;
+  color: #5c4b38;
+  line-height: 1.75rem;
+}
+
+.choose-text-three {
+  position: absolute;
+  text-align: left;
+  top: 9rem;
+  z-index: 999999;
+  right: 0.37rem;
+}
+
+.choose-text-three::before {
+  content: "";
+  position: absolute;
+  width: 1.87rem;
+  height: 1.87rem;
+  background: #000;
+  border-radius: 50%;
+  border: none;
+  left: -3rem;
+}
+
+.choose-text-three h3 {
+  font-size: 1.5rem;
+  font-family: "Noto Serif";
+  margin-bottom: 1.25rem;
+}
+
+.choose-text-three p {
+  max-width: 27.68rem;
+  font-size: 1.25rem;
+  color: #5c4b38;
+  line-height: 1.75rem;
+}
+
+.choose-text-four {
+  position: absolute;
+  text-align: left;
+  bottom: 0;
+  z-index: 999999;
+  right: 0.37rem;
+}
+
+.choose-text-four::before {
+  content: "";
+  position: absolute;
+  width: 1.87rem;
+  height: 1.87rem;
+  background: #000;
+  border-radius: 50%;
+  border: none;
+  left: -3.4rem;
+}
+
+.choose-text-four h3 {
+  font-size: 1.5rem;
+  font-family: "Noto Serif";
+  margin-bottom: 1.25rem;
+}
+
+.choose-text-four p {
+  max-width: 27.68rem;
+  font-size: 1.25rem;
+  color: #5c4b38;
+  line-height: 1.75rem;
+}

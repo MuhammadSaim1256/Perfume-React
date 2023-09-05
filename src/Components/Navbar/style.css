@@ -1,0 +1,246 @@
+header {
+  position: sticky;
+  background: #eddbc7;
+}
+
+nav {
+  width: 100%;
+  max-width: 95.625rem;
+  margin: 0 auto;
+  padding: 2.14rem 0 0.88rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid black;
+}
+
+nav .logo {
+  max-width: 17.1125em;
+  width: 100%;
+}
+
+nav .logo img {
+  width: 100%;
+  height: 100%;
+}
+
+nav ul {
+  display: block;
+  margin: 0 auto;
+}
+
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 0.81rem 3.12rem;
+  border-left: 1px solid black;
+}
+
+#active {
+  padding-left: 0;
+  border-left: none;
+}
+
+nav ul li:last-child {
+  padding-right: 0;
+}
+
+nav ul li a {
+  display: block;
+  position: relative;
+  font-size: 1.25rem;
+  font-family: "Montserrat";
+  color: #000;
+  text-decoration: none;
+  padding-bottom: 10px;
+}
+
+nav ul li a:hover {
+  color: #000;
+}
+
+nav ul li a.active {
+  font-weight: 600;
+}
+
+nav ul li a::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 3px;
+  border-radius: 5px;
+  background-color: #000;
+  transform: scale(0);
+  transition: transform 0.5s;
+  left: 0;
+  bottom: 0;
+}
+
+.active::after {
+  transform: scale(1);
+}
+
+nav ul li a:hover::after {
+  transform: scale(1);
+}
+
+nav .icons {
+  display: flex;
+  align-items: baseline;
+}
+
+nav .icons .login {
+  margin: 0 1.88rem;
+}
+
+nav .cart,
+.login,
+.search,
+a img {
+  width: 100%;
+  height: 100%;
+}
+
+/* nav .icons .cart {
+  position: relative;
+} */
+
+nav .icons .cart span {
+  position: absolute;
+  background: #fff;
+  font-size: 10px;
+  padding: 0.12rem 0.31rem;
+  border-radius: 50%;
+  border: 1px solid #eddbc7;
+  top: 3rem;
+  right: -0.2rem;
+}
+
+#check {
+  display: none;
+}
+
+nav label {
+  position: relative;
+  width: 1.56rem;
+  height: 1.56rem;
+  display: flex;
+  overflow: hidden;
+}
+
+nav label #bar,
+#close {
+  width: 1.56rem;
+  height: 1.56rem;
+  display: none;
+  position: absolute;
+  right: 0;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 767px) {
+  nav {
+    max-width: 19.6875rem;
+    padding-top: 1.25rem;
+    margin: 0%;
+  }
+
+  nav .logo {
+    max-width: 9.5rem;
+    height: auto;
+  }
+
+  nav label {
+    width: 1.5rem;
+    height: 1.05631rem;
+  }
+
+  nav label > #bar {
+    display: inline-flex;
+    transition: all 0.3s ease;
+    width: 1.5rem;
+    height: 1.05631rem;
+  }
+
+  nav label > #close {
+    transition: all 0.3s ease;
+    width: 1.5rem;
+    height: 1.05631rem;
+  }
+
+  nav > ul {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: #eddbc7;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+  }
+
+  nav ul li a {
+    font-size: 1rem;
+  }
+
+  nav .icons .search {
+    display: none;
+  }
+
+  nav .icons .login {
+    margin: 0%;
+    margin-right: 0.93rem;
+  }
+
+  nav .icons .login,
+  nav .icons .cart {
+    width: auto;
+    height: 1.25rem;
+  }
+
+  nav ul li a:hover::after {
+    transform: scale(0);
+  }
+
+  nav ul li a.active::after {
+    transform: scale(0);
+  }
+
+  nav ul li {
+    border: none;
+    display: block;
+    padding: 0;
+    line-height: 2.5rem;
+  }
+
+  nav ul li a {
+    text-align: center;
+    transform: translateY(-33.12rem);
+    transition: all 0.3s ease;
+  }
+
+  #check:checked ~ label #bar {
+    display: none;
+  }
+
+  #check:checked ~ label #close {
+    display: inline-flex;
+  }
+
+  #check:checked ~ ul {
+    height: 15.62rem;
+  }
+
+  #check:checked ~ ul li a {
+    transform: translateY(0);
+  }
+
+  nav .icons .cart span {
+    top: 1.62rem;
+    right: 2.1rem;
+    font-size: 0.5rem;
+    padding: 0.13rem 0.25rem;
+  }
+}

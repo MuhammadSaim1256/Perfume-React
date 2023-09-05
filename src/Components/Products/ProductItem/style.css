@@ -1,0 +1,142 @@
+/* Section 2 */
+
+#product h1 {
+  margin: 6.25rem 0 0;
+  color: #000;
+  font-family: "Noto Serif";
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 500;
+  text-align: center;
+  line-height: 3.125rem; /* 125% */
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.swiper-slide {
+  width: 360px;
+  text-align: center;
+  font-size: 18px;
+  background: #5c4b38;
+  border-radius: 1.25rem;
+  padding: 3.13rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0.93rem;
+  margin-bottom: 1.67rem;
+}
+
+.img {
+  width: auto;
+  max-height: 14.437rem;
+  height: 100%;
+  margin-bottom: 1.87rem;
+}
+
+.swiper {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* .swiper-pagination-bullet {
+  background: #5c4b38;
+} */
+
+.mySwiper {
+  width: 106.87rem;
+}
+
+.swiper-slide .slide-text h2 {
+  color: #fff;
+  font-family: "Montserrat";
+  font-size: 1.25rem;
+  margin-bottom: 0.94rem;
+  font-weight: 500;
+  line-height: 1.1875rem;
+}
+
+.swiper-slide .slide-text .rev {
+  display: flex;
+  align-items: center;
+  margin: 0.62rem 0rem 0.94rem;
+}
+
+.swiper-slide .slide-text .rev img {
+  margin-bottom: 0%;
+}
+
+.swiper-slide .slide-text .rev h4 {
+  flex-shrink: 0;
+  color: #fff;
+  font-family: "Montserrat";
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-left: 0.61rem;
+}
+
+.swiper-slide .slide-text button {
+  width: 15.125rem;
+  height: 3.4375rem;
+  display: flex;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  width: 3.75rem;
+  height: 3.75rem;
+}
+
+hr {
+  max-width: 10rem;
+  width: 100%;
+  margin: 0% auto;
+}
+
+.slide-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btn,
+.btn a {
+  max-width: 15.125rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border-radius: 0.62rem;
+  background: #fff;
+  border: none;
+  color: #1d1915;
+  text-decoration: none;
+}
+
+.btn a svg {
+  max-width: 1.406rem;
+  width: 100%;
+  height: auto;
+  padding: 0.93rem;
+  padding-left: 1.37rem;
+  border-right: 1px solid #000;
+  margin-right: 0.93rem;
+}
+
+.btn a h4 {
+  font-size: 1rem;
+  font-family: "Montserrat";
+  font-weight: 600;
+  margin-right: 0.93rem;
+}
+
+.btn a h5 {
+  font-size: 0.75rem;
+  font-family: "Montserrat";
+  font-weight: 500;
+}
