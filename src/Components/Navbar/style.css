@@ -12,6 +12,7 @@ nav {
   align-items: center;
   justify-content: space-between;
   border-bottom: 1px solid black;
+  position: relative;
 }
 
 nav .logo {
@@ -99,6 +100,7 @@ nav .cart,
 a img {
   width: 100%;
   height: 100%;
+  position: relative;
 }
 
 /* nav .icons .cart {
@@ -112,8 +114,9 @@ nav .icons .cart span {
   padding: 0.12rem 0.31rem;
   border-radius: 50%;
   border: 1px solid #eddbc7;
-  top: 3rem;
+  top: -0.5rem;
   right: -0.2rem;
+  z-index: 111;
 }
 
 #check {
@@ -139,11 +142,53 @@ nav label #bar,
   transition: all 0.3s ease;
 }
 
+.login-popup {
+  background: white;
+  position: absolute;
+  right: 0;
+  bottom: -100%;
+  border-radius: 0.5rem;
+}
+
+.login-popup a {
+  text-decoration: none;
+  color: black;
+  margin: 0.94rem;
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+
+.login-popup button {
+  background: transparent;
+  outline: none;
+  border: none;
+  font-size: 1rem;
+  margin: 0 0 0.94rem 0.94rem;
+}
+
+.login-popup a::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 3px;
+  border-radius: 5px;
+  background-color: #000;
+  transform: scale(0);
+  transition: transform 0.5s;
+  left: 0;
+  bottom: 0;
+}
+
+.login-popup a:hover::after {
+  transform: scale(1);
+}
+
 @media screen and (max-width: 767px) {
   nav {
     max-width: 19.6875rem;
     padding-top: 1.25rem;
-    margin: 0%;
+    margin: 0% auto;
   }
 
   nav .logo {
@@ -238,8 +283,8 @@ nav label #bar,
   }
 
   nav .icons .cart span {
-    top: 1.62rem;
-    right: 2.1rem;
+    top: -0.5rem;
+    right: -0.5rem;
     font-size: 0.5rem;
     padding: 0.13rem 0.25rem;
   }

@@ -7,8 +7,8 @@ import About from "./Pages/About/About";
 import Contact from "./Pages/Contact/Contact";
 import Blog from "./Pages/Blog/Blog";
 import productContext from "./ProductContext/ProdductContext";
-import First from "./Components/Products/image 425.png";
-import Second from "./Components/Products/image 401.png";
+import First from "./Components/Products/image 485 2.png";
+import Second from "./Components/Products/image 493.png";
 import Third from "./Components/Products/best-luxury-fragrances-300484-1655236743384-main 3.png";
 import Fourth from "./Components/Products/image 402.png";
 import Five from "./Components/Products/Group 119.png";
@@ -16,7 +16,7 @@ import Six from "./Components/Products/image 404.png";
 import Seven from "./Components/Products/image 470.png";
 import Eight from "./Components/Products/image 472.png";
 import Nine from "./Components/Products/image 471.png";
-import Ten from "./Components/Products/image 425-1.png";
+import Ten from "./Components/Products/image 425.png";
 import Eleven from "./Components/Products/image 429.png";
 import Twelve from "./Components/Products/Ck 1.png";
 import Thirteen from "./Components/Products/image 473 2.png";
@@ -57,8 +57,6 @@ const App = () => {
         price: 14.99,
         desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem.",
       },
-    ],
-    productOne: [
       {
         id: 5,
         img: Five,
@@ -87,8 +85,6 @@ const App = () => {
         price: 14.99,
         desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem.",
       },
-    ],
-    productTwo: [
       {
         id: 9,
         img: Nine,

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom"; // Import useLocation
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
@@ -11,6 +11,13 @@ import "./style.css";
 
 const Navbar = () => {
   const location = useLocation(); // Get the current location
+
+  const [login, setLogin] = useState(false);
+  const user = {
+    id: "sakjskajs",
+    role: "Admin",
+    name: "John Doe",
+  };
 
   return (
     <header>
@@ -76,7 +83,7 @@ const Navbar = () => {
                 <img src={Search} alt="" />
               </Link>
             </div>
-            <div className="login">
+            <div className="login" onClick={() => setLogin(!login)}>
               <Link to="/">
                 <img src={Login} alt="" />
               </Link>
@@ -88,6 +95,19 @@ const Navbar = () => {
               </Link>
             </div>
           </div>
+          {login && (
+            <div className="login-popup">
+              <div className="login-popup-content">
+                <Link to="/profile">Profile</Link>
+                {user.role === "Admin" ? (
+                  <Link to="/admin">Dashboard</Link>
+                ) : (
+                  ""
+                )}
+                <button onClick={() => console.log("Logout")}>Logout</button>
+              </div>
+            </div>
+          )}
         </nav>
       </Container>
     </header>

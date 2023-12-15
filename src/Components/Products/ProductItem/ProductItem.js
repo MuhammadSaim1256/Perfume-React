@@ -7,7 +7,7 @@ import "./style.css";
 
 const ProductItem = ({ id, img, title, price }) => {
   return (
-    <div className="swiper-slide">
+    <div>
       <div className="slide-content">
         <div className="img">
           <Link to={`/shop/${id}`}>
