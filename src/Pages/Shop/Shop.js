@@ -1,32 +1,18 @@
 import React, { useContext } from "react";
-import Products from "../../Components/Products/Products";
 import productContext from "../../ProductContext/ProdductContext";
-import Container from "../../Components/Container/Container";
 import ProductItem from "../../Components/Products/ProductItem/ProductItem";
 
 const Shop = () => {
   const prodductContext = useContext(productContext);
 
-  const { productOne, productTwo } = prodductContext;
+  const { product } = prodductContext;
   return (
     <>
-      <Products />
+      <h1 className="shop-h1">Shop All Our Best Seller</h1>
       <div className="product-grid">
-        {productOne.map((item) => (
+        {product.map((item, index) => (
           <ProductItem
-            key={item.id}
-            id={item.id}
-            img={item.img}
-            title={item.title}
-            price={item.price}
-            desc={item.desc}
-          />
-        ))}
-      </div>
-      <div className="product-grid">
-        {productTwo.map((item) => (
-          <ProductItem
-            key={item.id}
+            key={index}
             id={item.id}
             img={item.img}
             title={item.title}

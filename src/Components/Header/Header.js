@@ -13,7 +13,7 @@ const Header = () => {
           in a World of Scented Luxury.
         </p>
         <Link to="/shop">
-          <button>Shop Now</button>
+          <span>Shop Now</span>
         </Link>
       </div>
       <div className="hero-img">

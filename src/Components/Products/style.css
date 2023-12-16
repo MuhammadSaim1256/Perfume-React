@@ -19,6 +19,7 @@
   width: 100%;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1.887rem;
   margin: 0% auto;
 }
 
@@ -60,10 +61,22 @@
   border-radius: 0.25rem;
   background: transparent;
   border: 1px solid #5c4b38;
+  opacity: 1;
 }
 
 .swiper-pagination-bullet-active {
   background: #5c4b38;
+}
+
+.shop-h1 {
+  color: #000;
+  font-family: "Noto Serif";
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 6.25rem 0 3.125rem;
+  text-align: center;
 }
 
 @media screen and (max-width: 767px) {

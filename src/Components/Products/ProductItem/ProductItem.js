@@ -1,13 +1,15 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import Star from "./Stars.png";
 import { faBagShopping } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./style.css";
 
 const ProductItem = ({ id, img, title, price }) => {
+  const location = useLocation();
+
   return (
-    <div className="iiiiii">
+    <div className={location.pathname === "/shop" ? "swiper-slide" : ""}>
       <div className="slide-content">
         <div className="img">
           <Link to={`/shop/${id}`}>
@@ -25,7 +27,7 @@ const ProductItem = ({ id, img, title, price }) => {
             <Link to="/shop">
               <FontAwesomeIcon icon={faBagShopping} />
               <h4>Add to cart</h4>
-              <h5>{price}</h5>
+              <h5>${price}</h5>
             </Link>
           </button>
         </div>
