@@ -7,24 +7,27 @@ import About from "./Pages/About/About";
 import Contact from "./Pages/Contact/Contact";
 import Blog from "./Pages/Blog/Blog";
 import productContext from "./ProductContext/ProdductContext";
-import First from "./Components/Products/image 485 2.png";
-import Second from "./Components/Products/image 493.png";
-import Third from "./Components/Products/best-luxury-fragrances-300484-1655236743384-main 3.png";
-import Fourth from "./Components/Products/image 402.png";
-import Five from "./Components/Products/Group 119.png";
-import Six from "./Components/Products/image 404.png";
-import Seven from "./Components/Products/image 470.png";
-import Eight from "./Components/Products/image 472.png";
-import Nine from "./Components/Products/image 471.png";
-import Ten from "./Components/Products/image 425.png";
-import Eleven from "./Components/Products/image 429.png";
-import Twelve from "./Components/Products/Ck 1.png";
-import Thirteen from "./Components/Products/image 473 2.png";
-import Fourteen from "./Components/Products/CK-BE-MEN-EDT-200ML 4.png";
-import Fifteen from "./Components/Products/ck2 1.png";
-import Sixteen from "./Components/Products/717kCyka+fL 3.png";
+import First from "./Assests/image 485 2.png";
+import Second from "./Assests/image 493.png";
+import Third from "./Assests/best-luxury-fragrances-300484-1655236743384-main 3.png";
+import Fourth from "./Assests/image 402.png";
+import Five from "./Assests/Group 119.png";
+import Six from "./Assests/image 404.png";
+import Seven from "./Assests/image 470.png";
+import Eight from "./Assests/image 472.png";
+import Nine from "./Assests/image 471.png";
+import Ten from "./Assests/image 425.png";
+import Eleven from "./Assests/image 429.png";
+import Twelve from "./Assests/Ck 1.png";
+import Thirteen from "./Assests/image 473 2.png";
+import Fourteen from "./Assests/CK-BE-MEN-EDT-200ML 4.png";
+import Fifteen from "./Assests/ck2 1.png";
+import Sixteen from "./Assests/717kCyka+fL 3.png";
+import testimonialOne from "./Assests/Testimonials 1.png";
+import testimonialTwo from "./Assests/Testimonials 2.png";
 import ProductDetail from "./Components/Products/ProductDetail/ProductDetail";
 import "./App.css";
+import Footer from "./Components/Footer/Footer";
 
 const App = () => {
   const productData = {
@@ -142,6 +145,36 @@ const App = () => {
         desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem.",
       },
     ],
+    testimonials: [
+      {
+        id: 1,
+        img: testimonialOne,
+        name: "Sarah",
+        city: "New York, NY",
+        desc: "I absolutely love the fragrance collection at this website! The scents are unique and high-quality, and I always receive compliments whenever I wear them. The team was extremely helpful in guiding me through the selection process and providing personalized recommendations.",
+      },
+      {
+        id: 2,
+        img: testimonialTwo,
+        name: "John",
+        city: "Los Angeles, CA",
+        desc: "I absolutely love the fragrance collection at this website! The scents are unique and high-quality, and I always receive compliments whenever I wear them. The team was extremely helpful in guiding me through the selection process and providing personalized recommendations.",
+      },
+      {
+        id: 3,
+        img: testimonialOne,
+        name: "Sarah",
+        city: "New York, NY",
+        desc: "I absolutely love the fragrance collection at this website! The scents are unique and high-quality, and I always receive compliments whenever I wear them. The team was extremely helpful in guiding me through the selection process and providing personalized recommendations.",
+      },
+      {
+        id: 4,
+        img: testimonialTwo,
+        name: "John",
+        city: "Los Angeles, CA",
+        desc: "I absolutely love the fragrance collection at this website! The scents are unique and high-quality, and I always receive compliments whenever I wear them. The team was extremely helpful in guiding me through the selection process and providing personalized recommendations.",
+      },
+    ],
   };
 
   return (
@@ -158,6 +191,7 @@ const App = () => {
             <Route path="/blog" element={<Blog />} />
             <Route path="/shop/:id" element={<ProductDetail />} />
           </Routes>
+          <Footer />
         </Router>
       </productContext.Provider>
     </>

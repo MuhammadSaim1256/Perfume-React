@@ -1,0 +1,148 @@
+footer {
+  background: #5c4b38;
+  padding: 6.25rem 0 1.87rem;
+}
+
+.foot-logo {
+  margin-bottom: 1.87rem;
+}
+
+.logo-content h3 {
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.social {
+  margin-top: 1.25rem;
+}
+
+.twiter {
+  margin: 0 1.25rem;
+}
+
+.footer {
+  max-width: 100%;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding-bottom: 3.25rem;
+  border-bottom: 0.5px solid #fff;
+}
+
+.footer ul li {
+  list-style: none;
+}
+
+.footer h4 {
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 1.25rem;
+}
+
+.footer li a {
+  width: fit-content;
+  position: relative;
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration: none;
+  margin: 1.25rem 0;
+  display: block;
+  overflow: hidden;
+}
+
+.footer li a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background: #fff;
+  bottom: 0%;
+  left: -100%;
+  transition: all 0.5s ease;
+}
+
+.footer li a:hover::after {
+  left: 0%;
+}
+
+.news-letter {
+  width: fit-content;
+}
+
+.news-letter h4 {
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.news-letter p {
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.news-email {
+  position: relative;
+  width: 100%;
+  margin-top: 1.25rem;
+}
+
+.news-letter input {
+  width: 100%;
+  flex-shrink: 0;
+  border-radius: 1.875rem;
+  border: none;
+  outline: none;
+  background: #fff;
+  padding: 0.94rem 1.5rem;
+}
+
+.news-letter button {
+  width: 6.75rem;
+  height: 3.125rem;
+  flex-shrink: 0;
+  border-radius: 1.875rem;
+  background: #000;
+  color: #fff;
+  outline: none;
+  border: none;
+  color: #eddbc7;
+  font-family: Montserrat;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 1.25rem;
+  cursor: pointer;
+}
+
+.copy-right {
+  color: rgba(255, 255, 255, 0.8);
+  font-family: Montserrat;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.03rem;
+  margin-top: 1.88rem;
+  text-align: center;
+}

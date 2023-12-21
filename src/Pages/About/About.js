@@ -1,7 +1,8 @@
 import React from "react";
 import Container from "../../Components/Container/Container";
-import aboutImg from "./Mask group copy.png";
+import aboutImg from "../../Assests/Mask group copy.png";
 import "./style.css";
+import Testimonial from "../../Components/Testimonials/Testimonial";
 
 const About = () => {
   return (
@@ -41,6 +42,7 @@ const About = () => {
           </div>
         </div>
       </Container>
+      <Testimonial />
     </>
   );
 };

@@ -2,10 +2,10 @@ import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom"; // Import useLocation
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
-import Logo from "./Logo.png";
-import Search from "./Search.png";
-import Login from "./Login.png";
-import Cart from "./Bag.png";
+import Logo from "../../Assests/Logo.png";
+import Search from "../../Assests/Search.png";
+import Login from "../../Assests/Login.png";
+import Cart from "../../Assests/Bag.png";
 import Container from "../Container/Container";
 import "./style.css";
 

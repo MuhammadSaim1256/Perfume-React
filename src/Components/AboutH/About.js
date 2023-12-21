@@ -1,5 +1,5 @@
 import React from "react";
-import AboutImg from "./Mask group.png";
+import AboutImg from "../../Assests/Mask group.png";
 import Container from "../Container/Container";
 import "./style.css";
 import { Link } from "react-router-dom";

@@ -1,8 +1,8 @@
 import React from "react";
-import Main from "./main.png";
+import Main from "../../Assests/main.png";
 import Container from "../Container/Container";
-import Leaf1 from "./Leaf1.png";
-import Leaf2 from "./Leaf2.png";
+import Leaf1 from "../../Assests/Leaf1.png";
+import Leaf2 from "../../Assests/Leaf2.png";
 import "./style.css";
 
 const Choose = () => {
