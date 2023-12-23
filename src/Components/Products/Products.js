@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import ProductItem from "./ProductItem/ProductItem";
-import productContext from "../../ProductContext/ProdductContext";
+import { ProductContext } from "../../ProductContext/ProdductContext";
 import Container from "../Container/Container";
 import PREV from "../../Assests/Group 184.png";
 import NEXT from "../../Assests/Group 185.png";
@@ -12,7 +12,7 @@ import "swiper/css/navigation";
 import "./style.css";
 
 const Products = () => {
-  const recieveContext = useContext(productContext);
+  const recieveContext = useContext(ProductContext);
   const { product } = recieveContext;
 
   return (

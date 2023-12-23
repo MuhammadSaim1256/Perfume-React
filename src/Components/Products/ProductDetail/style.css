@@ -1,0 +1,35 @@
+#product-detail {
+  width: 100%;
+  /* padding: ; */
+}
+
+#product-detail h1 {
+  color: #000;
+  font-family: Noto Serif;
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+}
+
+.product-detail {
+  width: 100%;
+  display: flex;
+}
+
+.product-detail-img {
+  padding: 6.94rem 15.3rem;
+  /* max-width: 46.875rem; */
+  /* max-height: 46.875rem; */
+  border-radius: 1.25rem;
+  background: #eddbc7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-detail-img img {
+  max-width: 16.25rem;
+  height: auto;
+}

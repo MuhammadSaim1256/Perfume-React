@@ -7,11 +7,11 @@ import "swiper/css/navigation";
 import PREV from "../../Assests/Group 196.png";
 import NEXT from "../../Assests/Group 230.png";
 import Container from "../Container/Container";
-import productContext from "../../ProductContext/ProdductContext";
+import { ProductContext } from "../../ProductContext/ProdductContext";
 import "./style.css";
 
 const Testimonial = () => {
-  const testiContext = useContext(productContext);
+  const testiContext = useContext(ProductContext);
   const product = testiContext.testimonials;
   return (
     <div id="testimonial">
