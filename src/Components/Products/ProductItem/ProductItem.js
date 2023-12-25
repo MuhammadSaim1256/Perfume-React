@@ -24,11 +24,11 @@ const ProductItem = ({ id, img, title, price }) => {
             <h4>05 reviews</h4>
           </div>
           <button className="btn">
-            <Link to="/shop">
+            <span>
               <FontAwesomeIcon icon={faBagShopping} />
               <h4>Add to cart</h4>
               <h5>${price}</h5>
-            </Link>
+            </span>
           </button>
         </div>
       </div>

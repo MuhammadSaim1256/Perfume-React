@@ -57,7 +57,6 @@
   height: 100%;
 }
 
-.abouth-text button,
 .abouth-text a {
   position: relative;
   width: 9.5rem;
@@ -74,10 +73,28 @@
   border-radius: 1.6875rem;
   cursor: pointer;
   text-decoration: none;
-  transition: all 0.5s;
+  overflow: hidden;
 }
 
-.abouth-text button:hover {
+.abouth-text a span {
+  z-index: 111111;
+  transition: all 0.8s ease;
+}
+
+.abouth-text a::after {
+  content: "";
+  position: absolute;
   background: #5c4b38;
+  width: 100%;
+  height: 100%;
+  left: -100%;
+  transition: all 0.5s ease;
+}
+
+.abouth-text a:hover:after {
+  left: 0%;
+}
+
+.abouth-text a:hover span {
   color: white;
 }

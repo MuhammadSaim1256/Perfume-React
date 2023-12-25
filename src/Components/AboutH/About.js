@@ -1,8 +1,8 @@
 import React from "react";
 import AboutImg from "../../Assests/Mask group.png";
 import Container from "../Container/Container";
-import "./style.css";
 import { Link } from "react-router-dom";
+import "./style.css";
 
 const about = () => {
   return (
@@ -22,7 +22,7 @@ const about = () => {
               impression.
             </p>
             <Link to="/about">
-              <button>Read More</button>
+              <span>Read More</span>
             </Link>
           </div>
         </div>
