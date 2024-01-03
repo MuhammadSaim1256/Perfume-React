@@ -157,6 +157,7 @@ nav label #bar,
   display: block;
   position: relative;
   overflow: hidden;
+  width: fit-content;
 }
 
 .login-popup button {

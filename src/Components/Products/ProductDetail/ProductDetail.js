@@ -12,9 +12,8 @@ const ProductDetail = () => {
   const dataContext = useContext(ProductContext);
   const { product } = dataContext;
 
-  const { id } = useParams(); // Get the id parameter from the URL
-
-  const selectedProduct = product.find((item) => item.id === parseInt(id)); // Find the selected product
+  const { id } = useParams();
+  const selectedProduct = product.find((item) => item.id === id);
 
   if (!selectedProduct) {
     return <div>Product not found</div>;

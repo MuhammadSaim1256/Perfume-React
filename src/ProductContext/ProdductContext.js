@@ -17,6 +17,22 @@ import Fifteen from "../Assests/ck2 1.png";
 import Sixteen from "../Assests/717kCyka+fL 3.png";
 import testimonialOne from "../Assests/Testimonials 1.png";
 import testimonialTwo from "../Assests/Testimonials 2.png";
+import Blog1 from "../Assests/Blog.png";
+import Blog2 from "../Assests/Blog2.png";
+import Blog3 from "../Assests/Blog3.png";
+import Blog4 from "../Assests/Blog4.png";
+import Blog5 from "../Assests/Blog5.png";
+import Blog6 from "../Assests/Blog6.png";
+import Blog7 from "../Assests/Blog7.png";
+import Blog8 from "../Assests/Blog8.png";
+import BlogOne from "../Assests/BlogOne.png";
+import BlogTwo from "../Assests/BlogTwo.png";
+import BlogThree from "../Assests/BlogThree.png";
+import BlogFour from "../Assests/BlogFour.png";
+import BlogFive from "../Assests/BlogFive.png";
+import BlogSix from "../Assests/BlogSix.png";
+import BlogSeven from "../Assests/BlogSeven.png";
+import BlogEight from "../Assests/BlogEight.png";
 
 const ProductContext = createContext();
 
@@ -24,7 +40,7 @@ const ProductProvider = ({ children }) => {
   const productData = {
     product: [
       {
-        id: 1,
+        id: "J. Dark NIGHT",
         img: First,
         title: "J. Dark NIGHT",
         price: 14.99,
@@ -39,7 +55,7 @@ const ProductProvider = ({ children }) => {
         ],
       },
       {
-        id: 2,
+        id: "J. JANAN GOLD EDITION",
         img: Second,
         title: "J. JANAN GOLD EDITION",
         price: 14.99,
@@ -54,7 +70,7 @@ const ProductProvider = ({ children }) => {
         ],
       },
       {
-        id: 3,
+        id: "DIOR BLACK OPIUM",
         img: Third,
         title: "DIOR BLACK OPIUM",
         price: 14.99,
@@ -69,7 +85,7 @@ const ProductProvider = ({ children }) => {
         ],
       },
       {
-        id: 4,
+        id: "J. Alexander",
         img: Fourth,
         title: "J. Alexander",
         price: 14.99,
@@ -84,7 +100,7 @@ const ProductProvider = ({ children }) => {
         ],
       },
       {
-        id: 5,
+        id: "COLOR ME WHITE EDDITON",
         img: Five,
         title: "COLOR ME WHITE EDDITON",
         price: 14.99,
@@ -99,7 +115,7 @@ const ProductProvider = ({ children }) => {
         ],
       },
       {
-        id: 6,
+        id: "YSL LIBRE",
         img: Six,
         title: "YSL LIBRE",
         price: 14.99,
@@ -114,7 +130,7 @@ const ProductProvider = ({ children }) => {
         ],
       },
       {
-        id: 7,
+        id: "COLOR ME BLACK EDDITION",
         img: Seven,
         title: "COLOR ME BLACK EDDITION",
         price: 14.99,
@@ -129,7 +145,7 @@ const ProductProvider = ({ children }) => {
         ],
       },
       {
-        id: 8,
+        id: "BLOSSOM POUR FEMME",
         img: Eight,
         title: "BLOSSOM POUR FEMME",
         price: 14.99,
@@ -144,7 +160,7 @@ const ProductProvider = ({ children }) => {
         ],
       },
       {
-        id: 9,
+        id: "J. EXCLUSIVE",
         img: Nine,
         title: "J. EXCLUSIVE",
         price: 14.99,
@@ -159,7 +175,7 @@ const ProductProvider = ({ children }) => {
         ],
       },
       {
-        id: 10,
+        id: "J, ESSENCE FOR MEN",
         img: Ten,
         title: "J, ESSENCE FOR MEN",
         price: 14.99,
@@ -292,6 +308,120 @@ const ProductProvider = ({ children }) => {
         name: "John",
         city: "Los Angeles, CA",
         desc: "I absolutely love the fragrance collection at this website! The scents are unique and high-quality, and I always receive compliments whenever I wear them. The team was extremely helpful in guiding me through the selection process and providing personalized recommendations.",
+      },
+    ],
+    blog: [
+      {
+        id: "lorem ipsum dolar",
+        title: "Lorem Ipsum Dolar",
+        img: Blog1,
+        imgDetail: BlogOne,
+        paragragh:
+          "“Lorem ipsum dolar is simply dummy text of the printing and typesetting industry.”",
+        decs: [
+          "Welcome to our fragrance blog! We are passionate about all things fragrance and are excited to share our knowledge and expertise with you. Whether you're a seasoned fragrance enthusiast or just getting started, our blog is the perfect place to discover new scents, learn about the latest industry news, and connect with other fragrance lovers. At our blog, we believe that fragrance is more than just a scent – it's an experience. That's why we're committed to providing you with engaging content that helps you explore the world of fragrance and find scents that speak to you",
+          "Our team of experts is constantly staying up-to-date on the latest trends and news in the fragrance industry, and we're eager to share our insights with you. From new product releases to insider tips and recommendations, we've got you covered.",
+          "We also believe in the power of community, and we encourage you to join in the conversation by leaving comments and sharing your own fragrance experiences. Together, we can create a vibrant and supportive community of fragrance enthusiasts.",
+          "Thank you for visiting our fragrance blog, and we hope you'll join us on this exciting journey of fragrance discovery.",
+        ],
+      },
+      {
+        id: "lorem ipsum dolar",
+        title: "Lorem Ipsum Dolar",
+        img: Blog2,
+        imgDetail: BlogTwo,
+        paragragh:
+          "“Lorem ipsum dolar is simply dummy text of the printing and typesetting industry.”",
+        decs: [
+          "Welcome to our fragrance blog! We are passionate about all things fragrance and are excited to share our knowledge and expertise with you. Whether you're a seasoned fragrance enthusiast or just getting started, our blog is the perfect place to discover new scents, learn about the latest industry news, and connect with other fragrance lovers. At our blog, we believe that fragrance is more than just a scent – it's an experience. That's why we're committed to providing you with engaging content that helps you explore the world of fragrance and find scents that speak to you",
+          "Our team of experts is constantly staying up-to-date on the latest trends and news in the fragrance industry, and we're eager to share our insights with you. From new product releases to insider tips and recommendations, we've got you covered.",
+          "We also believe in the power of community, and we encourage you to join in the conversation by leaving comments and sharing your own fragrance experiences. Together, we can create a vibrant and supportive community of fragrance enthusiasts.",
+          "Thank you for visiting our fragrance blog, and we hope you'll join us on this exciting journey of fragrance discovery.",
+        ],
+      },
+      {
+        id: "lorem ipsum dolar",
+        title: "Lorem Ipsum Dolar",
+        img: Blog3,
+        imgDetail: BlogThree,
+        paragragh:
+          "“Lorem ipsum dolar is simply dummy text of the printing and typesetting industry.”",
+        decs: [
+          "Welcome to our fragrance blog! We are passionate about all things fragrance and are excited to share our knowledge and expertise with you. Whether you're a seasoned fragrance enthusiast or just getting started, our blog is the perfect place to discover new scents, learn about the latest industry news, and connect with other fragrance lovers. At our blog, we believe that fragrance is more than just a scent – it's an experience. That's why we're committed to providing you with engaging content that helps you explore the world of fragrance and find scents that speak to you",
+          "Our team of experts is constantly staying up-to-date on the latest trends and news in the fragrance industry, and we're eager to share our insights with you. From new product releases to insider tips and recommendations, we've got you covered.",
+          "We also believe in the power of community, and we encourage you to join in the conversation by leaving comments and sharing your own fragrance experiences. Together, we can create a vibrant and supportive community of fragrance enthusiasts.",
+          "Thank you for visiting our fragrance blog, and we hope you'll join us on this exciting journey of fragrance discovery.",
+        ],
+      },
+      {
+        id: "lorem ipsum dolar",
+        title: "Lorem Ipsum Dolar",
+        img: Blog4,
+        imgDetail: BlogFour,
+        paragragh:
+          "“Lorem ipsum dolar is simply dummy text of the printing and typesetting industry.”",
+        decs: [
+          "Welcome to our fragrance blog! We are passionate about all things fragrance and are excited to share our knowledge and expertise with you. Whether you're a seasoned fragrance enthusiast or just getting started, our blog is the perfect place to discover new scents, learn about the latest industry news, and connect with other fragrance lovers. At our blog, we believe that fragrance is more than just a scent – it's an experience. That's why we're committed to providing you with engaging content that helps you explore the world of fragrance and find scents that speak to you",
+          "Our team of experts is constantly staying up-to-date on the latest trends and news in the fragrance industry, and we're eager to share our insights with you. From new product releases to insider tips and recommendations, we've got you covered.",
+          "We also believe in the power of community, and we encourage you to join in the conversation by leaving comments and sharing your own fragrance experiences. Together, we can create a vibrant and supportive community of fragrance enthusiasts.",
+          "Thank you for visiting our fragrance blog, and we hope you'll join us on this exciting journey of fragrance discovery.",
+        ],
+      },
+      {
+        id: "lorem ipsum dolar",
+        title: "Lorem Ipsum Dolar",
+        img: Blog5,
+        imgDetail: BlogFive,
+        paragragh:
+          "“Lorem ipsum dolar is simply dummy text of the printing and typesetting industry.”",
+        decs: [
+          "Welcome to our fragrance blog! We are passionate about all things fragrance and are excited to share our knowledge and expertise with you. Whether you're a seasoned fragrance enthusiast or just getting started, our blog is the perfect place to discover new scents, learn about the latest industry news, and connect with other fragrance lovers. At our blog, we believe that fragrance is more than just a scent – it's an experience. That's why we're committed to providing you with engaging content that helps you explore the world of fragrance and find scents that speak to you",
+          "Our team of experts is constantly staying up-to-date on the latest trends and news in the fragrance industry, and we're eager to share our insights with you. From new product releases to insider tips and recommendations, we've got you covered.",
+          "We also believe in the power of community, and we encourage you to join in the conversation by leaving comments and sharing your own fragrance experiences. Together, we can create a vibrant and supportive community of fragrance enthusiasts.",
+          "Thank you for visiting our fragrance blog, and we hope you'll join us on this exciting journey of fragrance discovery.",
+        ],
+      },
+      {
+        id: "lorem ipsum dolar",
+        title: "Lorem Ipsum Dolar",
+        img: Blog6,
+        imgDetail: BlogSix,
+        paragragh:
+          "“Lorem ipsum dolar is simply dummy text of the printing and typesetting industry.”",
+        decs: [
+          "Welcome to our fragrance blog! We are passionate about all things fragrance and are excited to share our knowledge and expertise with you. Whether you're a seasoned fragrance enthusiast or just getting started, our blog is the perfect place to discover new scents, learn about the latest industry news, and connect with other fragrance lovers. At our blog, we believe that fragrance is more than just a scent – it's an experience. That's why we're committed to providing you with engaging content that helps you explore the world of fragrance and find scents that speak to you",
+          "Our team of experts is constantly staying up-to-date on the latest trends and news in the fragrance industry, and we're eager to share our insights with you. From new product releases to insider tips and recommendations, we've got you covered.",
+          "We also believe in the power of community, and we encourage you to join in the conversation by leaving comments and sharing your own fragrance experiences. Together, we can create a vibrant and supportive community of fragrance enthusiasts.",
+          "Thank you for visiting our fragrance blog, and we hope you'll join us on this exciting journey of fragrance discovery.",
+        ],
+      },
+      {
+        id: "lorem ipsum dolar",
+        title: "Lorem Ipsum Dolar",
+        img: Blog7,
+        imgDetail: BlogSeven,
+        paragragh:
+          "“Lorem ipsum dolar is simply dummy text of the printing and typesetting industry.”",
+        decs: [
+          "Welcome to our fragrance blog! We are passionate about all things fragrance and are excited to share our knowledge and expertise with you. Whether you're a seasoned fragrance enthusiast or just getting started, our blog is the perfect place to discover new scents, learn about the latest industry news, and connect with other fragrance lovers. At our blog, we believe that fragrance is more than just a scent – it's an experience. That's why we're committed to providing you with engaging content that helps you explore the world of fragrance and find scents that speak to you",
+          "Our team of experts is constantly staying up-to-date on the latest trends and news in the fragrance industry, and we're eager to share our insights with you. From new product releases to insider tips and recommendations, we've got you covered.",
+          "We also believe in the power of community, and we encourage you to join in the conversation by leaving comments and sharing your own fragrance experiences. Together, we can create a vibrant and supportive community of fragrance enthusiasts.",
+          "Thank you for visiting our fragrance blog, and we hope you'll join us on this exciting journey of fragrance discovery.",
+        ],
+      },
+      {
+        id: "lorem ipsum dolar",
+        title: "Lorem Ipsum Dolar",
+        img: Blog8,
+        imgDetail: BlogEight,
+        paragragh:
+          "“Lorem ipsum dolar is simply dummy text of the printing and typesetting industry.”",
+        decs: [
+          "Welcome to our fragrance blog! We are passionate about all things fragrance and are excited to share our knowledge and expertise with you. Whether you're a seasoned fragrance enthusiast or just getting started, our blog is the perfect place to discover new scents, learn about the latest industry news, and connect with other fragrance lovers. At our blog, we believe that fragrance is more than just a scent – it's an experience. That's why we're committed to providing you with engaging content that helps you explore the world of fragrance and find scents that speak to you",
+          "Our team of experts is constantly staying up-to-date on the latest trends and news in the fragrance industry, and we're eager to share our insights with you. From new product releases to insider tips and recommendations, we've got you covered.",
+          "We also believe in the power of community, and we encourage you to join in the conversation by leaving comments and sharing your own fragrance experiences. Together, we can create a vibrant and supportive community of fragrance enthusiasts.",
+          "Thank you for visiting our fragrance blog, and we hope you'll join us on this exciting journey of fragrance discovery.",
+        ],
       },
     ],
   };
