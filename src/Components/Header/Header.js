@@ -7,7 +7,7 @@ const Header = () => {
   return (
     <section className="hero-section">
       <div className="hero-text">
-        <h1>Explore Our Exquisite Fragrance .</h1>
+        <h1>Explore Our Exquisite Fragrance</h1>
         <p>
           Unleash Your Inner Confidence with Our Alluring Fragrances and Indulge
           in a World of Scented Luxury.

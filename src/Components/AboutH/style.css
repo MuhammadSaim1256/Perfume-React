@@ -98,3 +98,45 @@
 .abouth-text a:hover span {
   color: white;
 }
+
+@media screen and (max-width: 767px) {
+  .abouth {
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0%;
+  }
+
+  .abouth-content {
+    margin: 3.12rem 0;
+  }
+
+  .abouth-content h1 {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+
+  .abouth-text {
+    margin: 0%;
+  }
+
+  .abouth-text a {
+    margin: 0% auto;
+    width: 8.6875rem;
+    height: 3.125rem;
+    background: #5c4b38;
+  }
+
+  .abouth-text a span {
+    font-size: 1rem;
+    color: #fff;
+  }
+
+  .abouth-content p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    text-align: center;
+    margin: 0%;
+    margin-bottom: 1.88rem;
+  }
+}

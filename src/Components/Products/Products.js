@@ -22,7 +22,6 @@ const Products = () => {
         <Container>
           <Swiper
             slidesPerView={4}
-            spaceBetween={30}
             loop={true}
             pagination={{
               clickable: true,
@@ -32,6 +31,36 @@ const Products = () => {
               nextEl: ".swiper-button-next",
             }}
             modules={[Pagination, Navigation]}
+            breakpoints={{
+              320: {
+                slidesPerView: 1,
+                spaceBetween: 30,
+              },
+              737: {
+                slidesPerView: 1,
+                spaceBetween: 30,
+              },
+              900: {
+                slidesPerView: 2,
+                spaceBetween: 30,
+              },
+              1024: {
+                slidesPerView: 2,
+                spaceBetween: 30,
+              },
+              1200: {
+                slidesPerView: 3,
+                spaceBetween: 30,
+              },
+              1530: {
+                slidesPerView: 4,
+                spaceBetween: 30,
+              },
+              1920: {
+                slidesPerView: 4,
+                spaceBetween: 30,
+              },
+            }}
             className="mySwiper"
           >
             {product.map((item, index) => (

@@ -1,6 +1,7 @@
 header {
   position: sticky;
   background: #eddbc7;
+  z-index: 999999999999;
 }
 
 nav {

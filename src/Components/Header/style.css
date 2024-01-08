@@ -92,7 +92,8 @@
   .hero-section {
     flex-direction: column;
     align-items: center;
-    height: 90vh;
+    height: auto;
+    overflow: hidden;
   }
 
   .hero-text {
@@ -111,11 +112,22 @@
 
   .hero-text p {
     font-size: 1rem;
+    line-height: 1.5rem;
     text-align: center;
   }
 
   .hero-img {
-    max-width: 35rem;
-    width: 100%;
+    max-width: 90%;
+  }
+
+  .hero-text a {
+    width: 8.1875rem;
+    height: 3.125rem;
+    background: #5c4b38;
+  }
+
+  .hero-text a span {
+    font-size: 1rem;
+    color: #fff;
   }
 }
