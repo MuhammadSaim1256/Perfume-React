@@ -5,12 +5,13 @@
 
 #testimonial h1 {
   color: #000;
-  font-family: Noto Serif;
+  font-family: "Noto Serif";
   font-size: 2.5rem;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
   text-align: center;
+  margin-bottom: 3.12rem;
 }
 
 .testimonial-slide {
@@ -43,4 +44,42 @@
   line-height: 1.75rem; /* 140% */
   text-align: left;
   margin-left: 1.25rem;
+}
+
+@media screen and (max-width: 767px) {
+  #testimonial h1 {
+    color: #000;
+    font-size: 1.875rem;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 1.87rem;
+  }
+
+  .testimonial-slide {
+    padding: 1.25rem;
+    box-sizing: border-box;
+    height: auto !important;
+  }
+
+  .testimonail {
+    overflow: hidden;
+    box-sizing: border-box;
+  }
+
+  .img-name img {
+    width: 3.12rem;
+    height: 3.12rem;
+  }
+
+  .img-name h3 {
+    font-size: 0.87rem;
+    line-height: 1.375rem;
+    margin-left: 0.93rem;
+  }
+
+  .testimonail p {
+    text-align: center;
+    font-size: 0.75rem;
+    line-height: 1.25rem;
+  }
 }

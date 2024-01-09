@@ -25,6 +25,36 @@ const Testimonial = () => {
             pagination={{
               clickable: true,
             }}
+            breakpoints={{
+              320: {
+                slidesPerView: 1,
+                spaceBetween: 30,
+              },
+              767: {
+                slidesPerView: 1,
+                spaceBetween: 30,
+              },
+              900: {
+                slidesPerView: 2,
+                spaceBetween: 30,
+              },
+              1024: {
+                slidesPerView: 2,
+                spaceBetween: 30,
+              },
+              1200: {
+                slidesPerView: 2,
+                spaceBetween: 30,
+              },
+              1530: {
+                slidesPerView: 2,
+                spaceBetween: 30,
+              },
+              1920: {
+                slidesPerView: 2,
+                spaceBetween: 30,
+              },
+            }}
             navigation={{
               prevEl: ".swiper-button-prev",
               nextEl: ".swiper-button-next",

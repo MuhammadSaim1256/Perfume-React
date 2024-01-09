@@ -36,7 +36,7 @@ const Products = () => {
                 slidesPerView: 1,
                 spaceBetween: 30,
               },
-              737: {
+              767: {
                 slidesPerView: 1,
                 spaceBetween: 30,
               },
