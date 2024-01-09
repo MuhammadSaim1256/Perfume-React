@@ -25,13 +25,15 @@ const Choose = () => {
             </div>
           </div>
           <div className="choose-text-two">
-            <h3>Personalized recommendations</h3>
-            <p>
-              {" "}
-              Our team of fragrance experts is always on hand to help you find
-              the perfect scent based on your preferences, personality, and
-              lifestyle.
-            </p>
+            <div>
+              <h3>Personalized recommendations</h3>
+              <p>
+                {" "}
+                Our team of fragrance experts is always on hand to help you find
+                the perfect scent based on your preferences, personality, and
+                lifestyle.
+              </p>
+            </div>
           </div>
 
           {/* Second */}
@@ -47,13 +49,15 @@ const Choose = () => {
             </div>
           </div>
           <div className="choose-text-four">
-            <h3>Top-quality products</h3>
-            <p>
-              {" "}
-              We only offer high-end perfumes, colognes, and eau de toilettes
-              from some of the most prestigious brands in the world, ensuring
-              that you get the best quality fragrance.
-            </p>
+            <div>
+              <h3>Top-quality products</h3>
+              <p>
+                {" "}
+                We only offer high-end perfumes, colognes, and eau de toilettes
+                from some of the most prestigious brands in the world, ensuring
+                that you get the best quality fragrance.
+              </p>
+            </div>
           </div>
           <div className="choose-png">
             <img src={Main} alt="" />

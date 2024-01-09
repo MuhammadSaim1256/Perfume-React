@@ -173,3 +173,76 @@
   color: #5c4b38;
   line-height: 1.75rem;
 }
+
+@media screen and (max-width: 767px) {
+  #choose {
+    padding: 3.12rem 0;
+  }
+
+  #choose h1 {
+    font-size: 1.875rem;
+    margin-bottom: 1.88rem;
+  }
+
+  .choose-png {
+    display: none;
+  }
+
+  .leaf-one {
+    width: 8.875rem;
+    height: 12.286rem;
+  }
+
+  .leaf-two {
+    width: 18.76131rem;
+    height: 20.64375rem;
+    z-index: -1;
+  }
+
+  .leaf-one img,
+  .leaf-two img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  .choose-text,
+  .choose-text-two,
+  .choose-text-three,
+  .choose-text-four {
+    position: initial;
+    /* width: max-content; */
+    display: flex;
+    text-align: left;
+    align-items: baseline;
+  }
+
+  .choose-text h3,
+  .choose-text-two h3,
+  .choose-text-three h3,
+  .choose-text-four h3 {
+    text-align: left;
+    font-size: 1.25rem;
+    font-weight: 500;
+  }
+
+  .choose-text p,
+  .choose-text-two p,
+  .choose-text-three p,
+  .choose-text-four p {
+    text-align: left;
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .choose-text::before,
+  .choose-text-two::before,
+  .choose-text-three::before,
+  .choose-text-four::before {
+    width: 0.9375rem !important;
+    height: 0.9375rem !important;
+    display: block;
+    position: initial;
+    margin: 0%;
+    margin-right: 0.94rem;
+  }
+}
