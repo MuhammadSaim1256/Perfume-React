@@ -82,3 +82,9 @@
     transform: translateY(-10px);
   }
 }
+
+@media screen and (max-width: 767px) {
+  .about-content {
+    flex-direction: column;
+  }
+}

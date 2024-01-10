@@ -7,7 +7,7 @@ const Shop = () => {
 
   const { product } = prodductContext;
   return (
-    <>
+    <div className="shop">
       <h1 className="shop-h1">Shop All Our Best Seller</h1>
       <div className="product-grid">
         {product.map((item, index) => (
@@ -21,7 +21,7 @@ const Shop = () => {
           />
         ))}
       </div>
-    </>
+    </div>
   );
 };
 

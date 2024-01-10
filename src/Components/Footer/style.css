@@ -1,5 +1,4 @@
 footer {
-  display: none;
   background: #5c4b38;
   padding: 6.25rem 0 1.87rem;
 }
@@ -146,4 +145,63 @@ footer {
   letter-spacing: -0.03rem;
   margin-top: 1.88rem;
   text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+  footer {
+    max-width: 100%;
+    width: 100%;
+    text-align: center;
+    padding: 3.12rem 0 1.88rem;
+  }
+
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 1.88rem;
+  }
+
+  .foot-logo {
+    width: 9.38356rem;
+    height: 2.5rem;
+  }
+
+  .logo-content {
+    margin-bottom: 1.88rem;
+  }
+
+  .logo-content h3 {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .social {
+    width: fit-content;
+    margin: 0% auto;
+    margin-top: 1.25rem;
+  }
+
+  .social img {
+    width: 1.56rem;
+    height: 1.56rem;
+  }
+
+  .footer h4 {
+    font-size: 1rem;
+  }
+
+  .footer ul {
+    margin-bottom: 1rem;
+  }
+
+  .footer ul li a {
+    text-align: center;
+    margin: 1.25rem auto;
+    font-size: 0.875rem;
+  }
+
+  .copy-right {
+    font-size: 0.625rem;
+    margin-top: 1.25rem;
+  }
 }
