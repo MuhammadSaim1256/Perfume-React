@@ -1,0 +1,211 @@
+#login {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#sign-up {
+       width: 100%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-content h1 {
+    color: #000;
+    font-family: "Noto Serif";
+    font-size: 3.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3.13rem 0 1.88rem 0;
+}
+
+.inputs input {
+    width: 30.625rem;
+    height: 3.375rem;
+    border-radius: 2.4375rem;
+    border: 1px solid #000;
+    outline: none;
+    padding: 0.94rem 1.87rem;
+    font-size: 1.25rem;
+}
+
+.name {
+    margin-bottom: 1.87rem;
+}
+
+.email {
+    margin-bottom: 1.87rem;
+}
+
+.password {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.88rem;
+}
+
+.c-password {
+    margin: 0%;
+}
+
+.password svg {
+    position: absolute;
+    width: 1.5rem;
+    height: 1.5rem;
+    right: 1.88rem;
+    cursor: pointer;
+    opacity: 0.4;
+}
+
+.submit {
+    margin-bottom: 1.88rem;
+}
+
+.submit button {
+    width: 30.625rem;
+    height: 3.375rem;
+    background: transparent;
+    outline: none;
+    border: 1px solid #5c4b38;
+    cursor: pointer;
+    font-size: 1.25rem;
+    line-height: 1.75rem; /* 140% */
+    font-weight: 500;
+    border-radius: 3.75rem;
+    color: #5c4b38;
+    position: relative;
+    overflow: hidden;
+}
+
+.submit button span {
+    transition: all .5s ease;
+    z-index: 9999999999999;
+    position: relative;
+}
+
+.submit button::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #5c4b38;
+    left: -100%;
+    top: 0%;
+    transition: all .8s ease;
+}
+
+.submit button:hover::after {
+    left: 0%;
+}
+
+.submit button:hover span {
+    color: #fff;
+}
+
+.forget {
+    margin-bottom: 1.88rem;
+}
+
+.forget a {
+    color: #000;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-decoration: none;
+}
+
+.or {
+    width: -webkit-fill-available;
+    margin-bottom: 1.88rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.or hr {
+    max-width: 100%;
+    width: 100%;
+    margin: 0%;
+}
+
+.or span {
+    text-align: center;
+    color: #000;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0 1rem;
+}
+
+.google,
+.facebook {
+    position: relative;
+    border-radius: 2.4375rem;
+    background: #EDDBC7;
+    max-width: 100%;
+    width: 30.625rem;
+    height: 3.375rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-bottom: 1.88rem;
+    transition: all .5s ease;
+}
+
+.google p, .facebook p {
+    color: #000;
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+
+.google img, .facebook img {
+    position: absolute;
+    left: 1.88rem;
+}
+
+.google:hover, .facebook:hover {
+    filter: drop-shadow(-2px 5px 10px rgba(0, 0, 0, 0.15));
+}
+
+.hr {
+    width: 100%;
+    margin-bottom: 1.88rem;
+}
+
+.hr hr {
+    max-width: 100%;
+    margin: 0%;
+}
+
+.login-sign-up p {
+    color: #000;
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+
+.login-sign-up a {
+    color: #000;
+    font-weight: 500;
+    text-decoration-line: underline;
+}

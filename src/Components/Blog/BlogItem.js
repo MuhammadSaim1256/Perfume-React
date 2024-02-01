@@ -6,7 +6,7 @@ const BlogItem = ({ id, img, title, paragraph }) => {
   return (
     <div className="blog-item">
       <div className="blog-img">
-        <img src={img} alt="" />
+        <Link to={`/blog/${id}`}><img src={img} alt="" /></Link>
       </div>
       <div className="blog-content">
         <h3>{title}</h3>

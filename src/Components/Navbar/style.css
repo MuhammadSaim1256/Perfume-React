@@ -88,7 +88,7 @@ nav ul li a:hover::after {
 
 nav .icons {
   display: flex;
-  align-items: baseline;
+  align-items: center;
 }
 
 nav .icons .login {
@@ -104,9 +104,12 @@ a img {
   position: relative;
 }
 
-/* nav .icons .cart {
-  position: relative;
-} */
+.login svg {
+  width:   1.666rem;
+  height:  1.666rem;
+  color: #000;
+  cursor: pointer;
+}
 
 nav .icons .cart span {
   position: absolute;
@@ -147,14 +150,25 @@ nav label #bar,
   background: white;
   position: absolute;
   right: 0;
-  bottom: -100%;
+  top: 0; /* Set initial position to bottom of the screen */
   border-radius: 0.5rem;
+  transition: all 0.5s ease; /* Apply transition to the bottom property */
+  padding: 0.94rem;
+  z-index: -99999;
+  opacity: 0;
+  border: 1px solid #eddbc7;
 }
+
+.login-popup.hidden {
+  top: 110%; /* Move the element off-screen when hidden */
+  opacity: 1;
+}
+
 
 .login-popup a {
   text-decoration: none;
   color: black;
-  margin: 0.94rem;
+  margin-bottom: 0.94rem;
   display: block;
   position: relative;
   overflow: hidden;
@@ -166,7 +180,25 @@ nav label #bar,
   outline: none;
   border: none;
   font-size: 1rem;
-  margin: 0 0 0.94rem 0.94rem;
+  cursor: pointer;
+  position: relative;
+}
+
+.login-popup button::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  border-radius: 5px;
+  background-color: #000;
+  transform: scale(0);
+  transition: transform 0.5s;
+  left: 0;
+  bottom: 0;
+}
+
+.login-popup button:hover::after {
+  transform: scale(1);
 }
 
 .login-popup a::after {

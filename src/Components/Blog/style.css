@@ -1,3 +1,7 @@
+.blog {
+  padding: 6.25rem 0;
+}
+
 .blog h1 {
   max-width: 46.875rem;
   color: #000;
@@ -6,6 +10,7 @@
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  margin-bottom: 3.12rem;
 }
 
 .blog-item {
@@ -34,7 +39,7 @@
 .blog-content h3 {
   color: #000;
   font-size: 1.25rem;
-  font-weight: 700;
+  font-weight: 500;
   line-height: 1.75rem; /* 140% */
   margin: 1.25rem 0;
   text-align: center;
@@ -44,7 +49,7 @@
   color: #000;
   text-align: center;
   font-size: 1.25rem;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 1.75rem; /* 140% */
   margin-bottom: 1.25rem;
 }
@@ -88,4 +93,55 @@
 
 .blog-content a:hover span {
   color: #000;
+}
+
+@media screen and (max-width: 767px) {
+  .blog {
+    padding: 3.12rem 0;
+  }
+
+  .blog h1 {
+ font-size: 1.875rem;
+ margin-bottom: 1.88rem;
+ text-align: center;
+  }
+
+  .blog-img {
+    width: 13.75rem;
+    height: 12.625rem;
+    border-top-right-radius: 0.625rem;
+    border-top-left-radius: 0.625rem;
+  }
+
+  .blog-img img {
+    width: 100%;
+    height: auto;
+    border: 1px solid #000;
+    border-bottom: transparent;
+    border-top: transparent;
+  }
+
+   .blog-item {
+    max-width: 13.75rem;
+    margin: 0% auto;
+    border-radius: 0.625rem;
+  }
+
+  .blog-content h3 {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    margin-bottom: 0;
+  }
+
+  .blog-content p {
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+    font-weight: 400;
+    margin: 0.62rem;
+  }
+
+  .blog-content a {
+    width: 8.5rem;
+height: 3.125rem;
+  }
 }

@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import { useParams } from "react-router-dom";
 import { ProductContext } from "../../../ProductContext/ProdductContext";
 import Container from "../../Container/Container";
@@ -15,6 +15,8 @@ const ProductDetail = () => {
   const { id } = useParams();
   const selectedProduct = product.find((item) => item.id === id);
 
+  const [count, setCount] = useState(0);
+
   if (!selectedProduct) {
     return <div>Product not found</div>;
   }
@@ -29,6 +31,7 @@ const ProductDetail = () => {
     reviewsQuantity,
     size,
     category,
+    cutPrice,
   } = selectedProduct;
 
   if (reviewsQuantity > 0) {
@@ -38,7 +41,7 @@ const ProductDetail = () => {
   }
 
   return (
-    <>
+    <div id="product-detail">
       <Container>
         <div className="product-detail">
           <h1>Shop All Our Best Seller</h1>
@@ -64,6 +67,7 @@ const ProductDetail = () => {
               </div>
               <div className="price">
                 <h4>${price}</h4>
+                <h4 className="cut-price">${cutPrice}</h4>
               </div>
               <hr />
               <div className="detail">
@@ -80,6 +84,24 @@ const ProductDetail = () => {
                 <h3>Reviews</h3>
               </div>
               <hr />
+              <div className="quantity">
+                <h4>Quantity</h4>
+                <div className="count">
+                  <button
+                    onClick={() => setCount(count - 1)}
+                    disabled={count <= 1}
+                  >
+                    -
+                  </button>
+                  <h5>{count}</h5>
+                  <button
+                    onClick={() => setCount(count + 1)}
+                    disabled={count >= stock}
+                  >
+                    +
+                  </button>
+                </div>
+              </div>
               <div className="btns">
                 <button className="buy">
                   <span>Buy Now</span>
@@ -97,7 +119,7 @@ const ProductDetail = () => {
         </div>
       </Container>
       <Products />
-    </>
+    </div>
   );
 };
 

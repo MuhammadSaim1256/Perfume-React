@@ -1,6 +1,9 @@
 .product-detail {
   width: 100%;
-  padding-top: 6.25rem;
+}
+
+#product-detail {
+  padding: 6.25rem 0;
 }
 
 .product-detail h1 {
@@ -80,6 +83,7 @@
 
 .price {
   margin-bottom: 1.25rem;
+  display: flex;
 }
 
 .price h4 {
@@ -89,6 +93,7 @@
   font-style: normal;
   font-weight: 600;
   line-height: 1.1875rem; /* 135.714% */
+  margin-right: 0.62rem;
 }
 
 .product-detail hr {
@@ -155,7 +160,7 @@
   line-height: 1.1875rem; /* 105.556% */
   cursor: pointer;
   margin-right: 1.25rem;
-  border: none;
+  border: 1px solid #000;
   outline: none;
   position: relative;
   overflow: hidden;
@@ -245,6 +250,116 @@
   left: 0%;
 }
 
-.cart-btn:hover {
+.cut-price {
+  color: #000;
+font-size: 0.875rem;
+font-style: normal;
+font-weight: 600;
+line-height: 1.1875rem; /* 135.714% */
+text-decoration-line: line-through;
+opacity: 0.6;
+}
+
+.slide-text hr {
+  max-width: 10rem;
+}
+
+.quantity {
+  margin-bottom : 1.25rem;
+}
+
+.quantity h4 {
+  color: #000;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.1875rem;
+    margin-bottom: 1.25rem;
+}
+
+.count {
+  display: flex;
+  align-items: center;
+  width: 6rem;
+  height: 2.5rem;
+  justify-content: space-between;
+  border: 1px solid #000;
+  border-radius: 4rem;
+  /* padding: ; */
+}
+
+.count h5 {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.count button {
+  font-size: 2rem;
+  background: transparent;
+  outline: transparent;
   border: transparent;
+}
+
+@media screen and (max-width: 767px) {
+  #product-detail {
+    padding: 3.12rem 0 0;
+  }
+
+  .product-detail h1 {
+    font-size: 1.875rem;
+    margin: 0%;
+  }
+  
+  .product-detail-content {
+    flex-direction: column;
+    margin-top: 1.88rem;
+  }
+
+  .product-detail-img {
+    padding: 1.88rem 1.44rem ;
+    margin: 0 auto 1.25rem;
+  }
+
+  .product-detail-img img {
+    height: 13.875rem;
+  }
+
+  .product-detail-text {
+    max-width: -webkit-fill-available;
+  }
+
+  .product-detail-text h1 {
+    font-size: 2rem;
+    margin-bottom: 0.62rem;
+  }
+
+  .stock h5 {
+    margin-bottom: 0.62rem;
+  }
+  
+  .reviews .fa-star {
+    padding: 0.12rem;
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .detail p {
+    font-size: 0.875rem;
+  }
+
+  .size h5 {
+    color: #000;
+font-size: 0.875rem;
+font-style: normal;
+font-weight: 400;
+line-height: 1.625rem; /* 185.714% */
+  }
+
+  .review h3 {
+color: #000;
+font-size: 1rem;
+font-style: normal;
+font-weight: 500;
+line-height: 1.1875rem; /* 118.75% */
+  }
 }

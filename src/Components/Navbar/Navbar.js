@@ -1,10 +1,9 @@
 import React, { useState } from "react";
-import { Link, useLocation } from "react-router-dom"; // Import useLocation
+import { Link, useLocation } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
+import { faBars, faXmark, faUser } from "@fortawesome/free-solid-svg-icons";
 import Logo from "../../Assests/Logo.png";
 import Search from "../../Assests/Search.png";
-import Login from "../../Assests/Login.png";
 import Cart from "../../Assests/Bag.png";
 import Container from "../Container/Container";
 import "./style.css";
@@ -14,9 +13,9 @@ const Navbar = () => {
 
   const [login, setLogin] = useState(false);
   const user = {
-    id: "sakjskajs",
-    role: "Admin",
-    name: "John Doe",
+    id: "dhfjdfhdfj",
+    role: "user",
+    name: "John",
   };
 
   return (
@@ -83,11 +82,27 @@ const Navbar = () => {
                 <img src={Search} alt="" />
               </Link>
             </div>
-            <div className="login" onClick={() => setLogin(!login)}>
-              <Link to="/">
-                <img src={Login} alt="" />
-              </Link>
-            </div>
+            {user ? (
+              // Show login icon if user is logged in
+              <div className="login">
+                {user.id === "" ? (
+                  <Link to="/login">
+                    <FontAwesomeIcon icon={faUser} />
+                  </Link>
+                ) : (
+                  <div onClick={() => setLogin(!login)}>
+                    <FontAwesomeIcon icon={faUser} />
+                  </div>
+                )}
+              </div>
+            ) : (
+              // Redirect user to login page if not logged in
+              <div className="login">
+                <Link to="/login">
+                  <FontAwesomeIcon icon={faUser} />
+                </Link>
+              </div>
+            )}
             <div className="cart">
               <span>0</span>
               <Link to="/">
@@ -95,15 +110,23 @@ const Navbar = () => {
               </Link>
             </div>
           </div>
-          {login && (
-            <div className="login-popup">
+          {login ? (
+            <div className={`login-popup hidden`}>
               <div className="login-popup-content">
-                <Link to="/profile">Profile</Link>
-                {user.role === "Admin" ? (
-                  <Link to="/admin">Dashboard</Link>
-                ) : (
-                  ""
-                )}
+                <Link to="/profile" onClick={() => setLogin(!login)}>
+                  Profile
+                </Link>
+                {user.role === "admin" && <Link to="/admin">Dashboard</Link>}
+                <button onClick={() => console.log("Logout")}>Logout</button>
+              </div>
+            </div>
+          ) : (
+            <div className={`login-popup`}>
+              <div className="login-popup-content">
+                <Link to="/profile" onClick={() => setLogin(!login)}>
+                  Profile
+                </Link>
+                {user.role === "admin" && <Link to="/admin">Dashboard</Link>}
                 <button onClick={() => console.log("Logout")}>Logout</button>
               </div>
             </div>
